@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/how2fit/static/css/main.5bbae7d2.css",
+    "main.js": "/how2fit/static/js/main.d9b7460c.js",
+    "static/js/787.3bc66e4c.chunk.js": "/how2fit/static/js/787.3bc66e4c.chunk.js",
+    "static/media/logo.svg": "/how2fit/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/how2fit/index.html",
+    "main.5bbae7d2.css.map": "/how2fit/static/css/main.5bbae7d2.css.map",
+    "main.d9b7460c.js.map": "/how2fit/static/js/main.d9b7460c.js.map",
+    "787.3bc66e4c.chunk.js.map": "/how2fit/static/js/787.3bc66e4c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5bbae7d2.css",
+    "static/js/main.d9b7460c.js"
+  ]
+}
