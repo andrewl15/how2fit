@@ -1,25 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/Header';
+import LoadingPage from './pages/Loading';
+import { useLoading } from './HelperFunc/Loading_Check';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Welcome to How2Fit!</h1>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React!
-        </a>
-      </header>
+    <div>
+      {useLoading() ? (
+        <LoadingPage />
+      ) : (
+        <div>
+          <div className = "App">
+            <Header />
+          </div>
+        </div>
+      )}
     </div>
   );
 }
