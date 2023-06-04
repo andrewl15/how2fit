@@ -4,6 +4,15 @@ body {
   background-color: rgb(35, 37, 37);
   font-family: 'Lato', sans-serif;
 }
+
+/* BACKGROUND PICTURE */
+
+video{
+  width: 100%;
+  object-fit: cover;
+  height: 100vh;
+}
+
 /* top-menu bar */
 
 body {
@@ -114,16 +123,5 @@ nav ul li a:hover::after {
   display: block;
   margin-bottom: 8px;
 }
-
-
-
-/* BACKGROUND PICTURE */
-
-video{
-  width: 100%;
-  object-fit: cover;
-  height: 100vh;
-}
-
 
 

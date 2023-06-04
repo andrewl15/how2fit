@@ -2,30 +2,20 @@ import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
 import AboutUs from '../pages/About';
 import HomePage from '../pages/Home';
 import '../App.css';
-import React, { useState } from 'react';
+import React from 'react';
 
 function Header() {
-  const [isHovered, setIsHovered] = useState(false);
-
-  const handleHover = () => {
-    setIsHovered(true);
-  };
-
-  const handleLeave = () => {
-    setIsHovered(false);
-  };
-
   return (
     <Router>
       <div className="Header">
-        <div className={`top-menu ${isHovered ? 'hovered' : ''}`}>
+        <div className="top-menu"> 
           <div className="container">
             <Link to="/" className="logo">
               H2F
             </Link>
             <nav>
               <ul className="hoverable-list">
-                <li onMouseEnter={handleHover} onMouseLeave={handleLeave}>
+                <li>
                   <Link to="/workouts">Workouts</Link>
                   <ul className="sub-list">
                     <li>
@@ -39,7 +29,7 @@ function Header() {
                     </li>
                   </ul>
                 </li>
-                <li onMouseEnter={handleHover} onMouseLeave={handleLeave}>
+                <li>
                   <Link to="/meal-plans">Meal Plans</Link>
                   <ul className="sub-list">
                     <li>
@@ -60,11 +50,11 @@ function Header() {
             </nav>
           </div>
         </div>
-        <Routes>
-          <Route path="/about" element={<AboutUs />} />
-          <Route path="/" element={<HomePage />} />
-        </Routes>
       </div>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutUs />} />
+      </Routes>
     </Router>
   );
 }
