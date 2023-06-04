@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
 import AboutUs from '../pages/About';
 import HomePage from '../pages/Home';
 import '../App.css';
-import React from 'react';
 
 function Header() {
   return (
