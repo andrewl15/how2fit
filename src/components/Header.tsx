@@ -50,8 +50,8 @@ function Header() {
           </div>
         </div>
         <Routes>
-          <Route path="/about" element={<AboutUs />} />
           <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutUs />} />
         </Routes>
       </div>
     </Router>
